@@ -1,12 +1,13 @@
 'use strict';
 
 import {expect} from 'mai-chai';
-import {add} from '../index.js';
 
-describe ('Maths', () => {
-  describe ('add()', () => {
-    it ('adds two numbers', () => {
-      expect (add (1, 2)).to.equal (3);
-    });
+import {fact} from '../index.js';
+
+describe ('Factorial', () => {
+  it ('Returns correct results', () => {
+    expect (fact (1)).to.be.equal (1);
+    expect (fact (2)).to.be.equal (2);
+    expect (fact (3)).to.be.equal (6);
   });
 });
